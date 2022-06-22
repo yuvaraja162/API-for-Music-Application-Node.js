@@ -3,6 +3,8 @@ module.exports=app=>{
     var router=require('express').Router();
   
     router.get('/retrievesongs',controller.retrievesongs);
+    router.get('/retrieve/resultsongs/:name',controller.retrieveresult);
+   // router.get('/retrievedetails',controller.retrieveproduct);
 
 
     app.use('/music',router);
